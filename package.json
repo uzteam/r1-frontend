@@ -1,0 +1,25 @@
+{
+  "name": "r1-frontend",
+  "version": "1.0.0",
+  "description": "Twitter clone with React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzteam/r1-frontend.git"
+  },
+  "keywords": [
+    "twitter",
+    "react",
+    "social",
+    "network"
+  ],
+  "author": "uzteam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uzteam/r1-frontend/issues"
+  },
+  "homepage": "https://github.com/uzteam/r1-frontend#readme"
+}
