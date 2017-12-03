@@ -1,0 +1,72 @@
+.header {
+  flex: 1 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 46px;
+  box-shadow: 1px 1px 1px #333;
+  background: white;
+  padding: 0 $header-padding;
+  display: flex;
+  flex-flow: row wrap;
+  > * {
+    padding: 13px 1%;
+    margin: 0;
+  }
+  > a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  > form {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+  }
+  > form > input, .header > form > input:focus {
+    @include bradius(22px);
+    border: 1px solid #e6ecf1;
+    padding-left: 10px;
+    outline: 0;
+  }
+  > form > input:focus {
+    border: 2px solid #0faeec;
+  }
+  .left-order {
+    order: 0;
+    align-self: stretch;
+
+  }
+
+  .right-order {
+    order: 2;
+    align-self: stretch;
+
+  }
+
+  .twitter.refresh {
+    order: 1;
+    flex: 1 auto;
+    text-align: center;
+    color: #0faeec;
+  }
+  .active, a:hover {
+    border-bottom: 2px #0faeec solid;
+    color: #0faeec;
+    font-weight: 800;
+  }
+
+  .tweet {
+    @include bradius(21px);
+    background: #0faeec;
+    color: white !important;
+    margin: 8px 0;
+    padding: 6px 18px !important;
+  }
+
+  .tweet:hover {
+    background: #1aa6ec;
+  }
+
+}

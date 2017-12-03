@@ -1,0 +1,113 @@
+.tw-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 46px auto;
+  width: $primary-container-width;
+  padding-top: 10px;
+
+  .side {
+    flex: 1 23%;
+  }
+
+  .side-left {
+    display: flex;
+    flex-flow: row wrap;
+
+    .card.card-personal {
+      flex: 1 100%;
+      height: 213px;
+      background: white;
+
+      .card-header.with-cover {
+        height: 95px;
+        background-image: url("https://pbs.twimg.com/profile_banners/776937074716975104/1504582103/600x200");
+        background-size: cover;
+        position: relative;
+
+        .card-image {
+          font-size: 30px;
+          @include bradius(50%);
+          box-shadow: 1px 1px 1px #ccc;
+          position: absolute;
+          bottom: -40%;
+          left: 15px;
+          background: #2f424a;
+          padding: 18.5px 21px;
+          color: white;
+        }
+      }
+      .card-body {
+        height: 118px;
+        overflow: hidden;
+
+        .card-title {
+          margin-top: 5px;
+          margin-left: 100px;
+          margin-bottom: 0;
+          font-size: 18px;
+          line-height: 25px;
+          text-decoration: none;
+          color: #000;
+          font-weight: 900;
+        }
+
+        .card-second-title {
+          margin-top: 0;
+          margin-left: 100px;
+          margin-bottom: 5px;
+          color: #555555;
+          font-size: 14px;
+          line-height: 20px;
+          text-decoration: none;
+
+          font-weight: bolder;
+
+        }
+
+        .card-title:hover,
+        .card-second-title:hover {
+          text-decoration: underline;
+        }
+
+      }
+      .card-footer {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 15px;
+
+        .mcol {
+          flex: 1;
+          .mcol-title {
+            text-decoration: none;
+            color: #657786;
+            font-weight: 700;
+            display: block;
+            text-align: center;
+          }
+          > .ctext {
+            display: block;
+            text-align: center;
+            font-size: 22px;
+            line-height: 1.2em;
+            font-weight: bolder;
+            color: #0faeec;
+          }
+        }
+        .mcol-link {
+          text-decoration: none;
+        }
+
+        .mcol-link:hover .mcol-title {
+          color: #4c5eec;
+        }
+      }
+    }
+  }
+
+  .content {
+    flex: 2 50%;
+  }
+
+}
+

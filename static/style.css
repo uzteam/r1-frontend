@@ -1,0 +1,219 @@
+/** Variables */
+/** end Variables*/
+html, body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+div {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e6ecf0;
+}
+
+.header {
+    flex: 1 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    box-shadow: 1px 1px 1px #333;
+    background: white;
+    padding: 0 6%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header > * {
+    padding: 13px 1%;
+    margin: 0;
+}
+
+.header > a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header > form {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.header > form > input, .header .header > form > input:focus {
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    border-radius: 22px;
+    border: 1px solid #e6ecf1;
+    padding-left: 10px;
+    outline: 0;
+}
+
+.header > form > input:focus {
+    border: 2px solid #0faeec;
+}
+
+.header .left-order {
+    order: 0;
+    align-self: stretch;
+}
+
+.header .right-order {
+    order: 2;
+    align-self: stretch;
+}
+
+.header .twitter.refresh {
+    order: 1;
+    flex: 1 auto;
+    text-align: center;
+    color: #0faeec;
+}
+
+.header .active, .header a:hover {
+    border-bottom: 2px #0faeec solid;
+    color: #0faeec;
+    font-weight: 800;
+}
+
+.header .tweet {
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    -ms-border-radius: 21px;
+    border-radius: 21px;
+    background: #0faeec;
+    color: white !important;
+    margin: 8px 0;
+    padding: 6px 18px !important;
+}
+
+.header .tweet:hover {
+    background: #1aa6ec;
+}
+
+.tw-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 46px auto;
+    width: 90%;
+    padding-top: 10px;
+}
+
+.tw-container .side {
+    flex: 1 23%;
+}
+
+.tw-container .side-left {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.tw-container .side-left .card.card-personal {
+    flex: 1 100%;
+    height: 213px;
+    background: white;
+}
+
+.tw-container .side-left .card.card-personal .card-header.with-cover {
+    height: 95px;
+    background-image: url("https://pbs.twimg.com/profile_banners/776937074716975104/1504582103/600x200");
+    background-size: cover;
+    position: relative;
+}
+
+.tw-container .side-left .card.card-personal .card-header.with-cover .card-image {
+    font-size: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #ccc;
+    position: absolute;
+    bottom: -40%;
+    left: 15px;
+    background: #2f424a;
+    padding: 18.5px 21px;
+    color: white;
+}
+
+.tw-container .side-left .card.card-personal .card-body {
+    height: 118px;
+    overflow: hidden;
+}
+
+.tw-container .side-left .card.card-personal .card-body .card-title {
+    margin-top: 5px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+
+.tw-container .side-left .card.card-personal .card-body .card-second-title {
+    margin-top: 0;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    color: #555555;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.tw-container .side-left .card.card-personal .card-body .card-title:hover,
+.tw-container .side-left .card.card-personal .card-body .card-second-title:hover {
+    text-decoration: underline;
+}
+
+.tw-container .side-left .card.card-personal .card-footer {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 15px;
+}
+
+.tw-container .side-left .card.card-personal .card-footer .mcol {
+    flex: 1;
+}
+
+.tw-container .side-left .card.card-personal .card-footer .mcol .mcol-title {
+    text-decoration: none;
+    color: #657786;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+}
+
+.tw-container .side-left .card.card-personal .card-footer .mcol > .ctext {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2em;
+    font-weight: bolder;
+    color: #0faeec;
+}
+
+.tw-container .side-left .card.card-personal .card-footer .mcol-link {
+    text-decoration: none;
+}
+
+.tw-container .side-left .card.card-personal .card-footer .mcol-link:hover .mcol-title {
+    color: #4c5eec;
+}
+
+.tw-container .content {
+    flex: 2 50%;
+}
